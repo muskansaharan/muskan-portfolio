@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muskan Saharan | BCA Student &amp; Aspiring Developer</title>
+  <meta name="description" content="Portfolio of Muskan Saharan, a BCA student passionate about web development and building things that matter." />
+  <meta name="theme-color" content="#0B1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">M<span>.</span>S</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="btn btn-sm">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Hello, I'm</p>
+        <h1 class="reveal" style="--d:.1s">Muskan <span class="grad">Saharan</span></h1>
+        <p class="typed reveal" style="--d:.2s">BCA Student · <span id="typed"></span><span class="caret">|</span></p>
+        <p class="lead reveal" style="--d:.3s">I turn curiosity into code, crafting clean, responsive and delightful experiences for the web.</p>
+        <div class="cta reveal" style="--d:.4s">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="photo reveal-left">
+          <div class="photo-frame">
+            <img src="https://picsum.photos/seed/muskan-portrait/600/700" alt="Portrait placeholder" loading="lazy" />
+          </div>
+          <div class="chip chip-a">BCA</div>
+          <div class="chip chip-b">Learner</div>
+        </div>
+        <div class="reveal-right">
+          <p class="eyebrow">About me</p>
+          <h2>Building skills, one project at a <span class="grad">time</span></h2>
+          <p>I'm a Bachelor of Computer Applications student who loves understanding how software works and how to make it better. I enjoy solving problems, learning new tools, and turning ideas into real, usable products.</p>
+          <p>When I'm not studying, I'm experimenting with web technologies, exploring design, and looking for ways to grow as a developer.</p>
+          <div class="stats">
+            <div><strong data-count="10">0</strong><span>Projects built</span></div>
+            <div><strong data-count="8">0</strong><span>Technologies</span></div>
+            <div><strong data-count="100">0</strong><span>% curiosity</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container">
+        <p class="eyebrow reveal">What I work with</p>
+        <h2 class="reveal">Skills &amp; <span class="grad">toolkit</span></h2>
+        <div class="skills">
+          <div class="skill reveal"><div class="skill-top"><span>HTML &amp; CSS</span><b>90%</b></div><div class="bar"><i data-w="90"></i></div></div>
+          <div class="skill reveal"><div class="skill-top"><span>JavaScript</span><b>75%</b></div><div class="bar"><i data-w="75"></i></div></div>
+          <div class="skill reveal"><div class="skill-top"><span>Python</span><b>70%</b></div><div class="bar"><i data-w="70"></i></div></div>
+          <div class="skill reveal"><div class="skill-top"><span>C / C++</span><b>70%</b></div><div class="bar"><i data-w="70"></i></div></div>
+          <div class="skill reveal"><div class="skill-top"><span>SQL &amp; Databases</span><b>65%</b></div><div class="bar"><i data-w="65"></i></div></div>
+          <div class="skill reveal"><div class="skill-top"><span>Git &amp; GitHub</span><b>70%</b></div><div class="bar"><i data-w="70"></i></div></div>
+        </div>
+        <div class="tags reveal">
+          <span>Responsive Design</span><span>Problem Solving</span><span>Data Structures</span><span>OOP</span><span>Teamwork</span><span>Communication</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal">Selected work</p>
+        <h2 class="reveal">Featured <span class="grad">projects</span></h2>
+        <div class="cards">
+          <article class="card tilt reveal">
+            <img src="https://picsum.photos/seed/project-one/640/420" alt="Project one preview" loading="lazy" />
+            <div class="card-body">
+              <h3>Personal Portfolio</h3>
+              <p>A fast, responsive showcase site with animated visuals and smooth scrolling.</p>
+              <div class="mini"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+          </article>
+          <article class="card tilt reveal" style="--d:.1s">
+            <img src="https://picsum.photos/seed/project-two/640/420" alt="Project two preview" loading="lazy" />
+            <div class="card-body">
+              <h3>Student Management App</h3>
+              <p>CRUD application to manage student records with search, filters and reports.</p>
+              <div class="mini"><span>Python</span><span>SQL</span></div>
+            </div>
+          </article>
+          <article class="card tilt reveal" style="--d:.2s">
+            <img src="https://picsum.photos/seed/project-three/640/420" alt="Project three preview" loading="lazy" />
+            <div class="card-body">
+              <h3>Task Planner</h3>
+              <p>A clean to-do planner with categories, due dates and local storage.</p>
+              <div class="mini"><span>JavaScript</span><span>UI/UX</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="journey">
+      <div class="container">
+        <p class="eyebrow reveal">My path</p>
+        <h2 class="reveal">Learning <span class="grad">journey</span></h2>
+        <div class="timeline">
+          <div class="t-item reveal-left"><i></i><h3>Bachelor of Computer Applications</h3><span>Currently pursuing</span><p>Studying programming, databases, networking and software engineering fundamentals.</p></div>
+          <div class="t-item reveal-right"><i></i><h3>Web Development</h3><span>Self-driven learning</span><p>Building projects with HTML, CSS and JavaScript to sharpen front-end skills.</p></div>
+          <div class="t-item reveal-left"><i></i><h3>What's next</h3><span>Looking ahead</span><p>Internships, open-source contributions and deeper dives into full-stack development.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="reveal">Let's build something <span class="grad">together</span></h2>
+        <p class="reveal lead">Open to internships, collaborations and conversations. My inbox is always open.</p>
+        <a class="btn big reveal" href="mailto:muskansaharan890@gmail.com">muskansaharan890@gmail.com</a>
+        <div class="gallery reveal">
+          <img src="https://picsum.photos/seed/vibe1/300/300" alt="" loading="lazy" />
+          <img src="https://picsum.photos/seed/vibe2/300/300" alt="" loading="lazy" />
+          <img src="https://picsum.photos/seed/vibe3/300/300" alt="" loading="lazy" />
+          <img src="https://picsum.photos/seed/vibe4/300/300" alt="" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Muskan Saharan. Crafted with care.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
